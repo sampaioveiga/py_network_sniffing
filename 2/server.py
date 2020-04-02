@@ -1,5 +1,5 @@
 # Server file
-# Estabishes connection and waits for message
+# Listen for connections and waits for message
 
 # variables
 import socket
@@ -15,20 +15,16 @@ except OSError as e:
     print('[-] Error creating socket: ' + str(e[0]) + ' - ' + e[1])
     sys.exit();
 
-# gets port and waits
-
 s.bind((ip, port))
-s.listen(1) # listen for incomming connections - limited to 1
+s.listen(1) # server accepts 1 client
 print('[*] Listenning...')
 
+# accepts connetions from client
 while True:
-    # accepts connetions, prints message and acknowledges
     conn, addr = s.accept()
-    print('[*] Connection from ' + str(addr) + 'accepted')
-
+    print('[*] Connection from ' + str(addr) + ' accepted')
+    conn.send(b'Connection accepted')
     data = conn.recv(buffer_size)
     print('[*] Message from client: ' + str(data.decode())) # data received is converted from bytes to string
-
-    conn.send(b'[*] Received. Over and Out')
-
-conn.close()
+    conn.close()
+s.close()
