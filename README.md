@@ -5,7 +5,7 @@ This project takes baby steps into the creation of a network sniffer.
 <h2>Running</h2>
 
 <p>1. Clone repository</p>
-<p>2. Run venv:<br /> source bin/activate</p>
+<p>2. Open examples and run code inside each folder</p>
 
 <h2>Content</h2>
 
@@ -26,3 +26,8 @@ This project takes baby steps into the creation of a network sniffer.
 
 <h3>Dir 6 - Raw socket sniffer</h3>
 <p>sniffer.py listens and outputs traffic with source and destination MAC/IP</p>
+
+<h3>Dir 7 - Raw socket inject</h3>
+<p>inject.py injects raw packet into network</p>
+
+<h3>Dir 8 - Scapy sniffer</h3>
