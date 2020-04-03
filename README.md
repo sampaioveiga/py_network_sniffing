@@ -23,3 +23,6 @@ This project takes baby steps into the creation of a network sniffer.
 
 <h3>Dir 5 - echo server with socketserver</h3>
 <p>server.py uses socketserver module to create a TCP server which echoes messages from client. client.py sends user input to server</p>
+
+<h3>Dir 6 - Raw socket sniffer</h3>
+<p>sniffer.py listens and outputs traffic with source and destination MAC/IP</p>
