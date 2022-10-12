@@ -1,11 +1,14 @@
-<h1>Python 3 Network Tutoria</h1>
+<h1>Python 3 Network Tutorial</h1>
 
 This project takes baby steps into the creation of a network sniffer.
 
 <h2>Running</h2>
 
-<p>1. Clone repository</p>
-<p>2. Open examples and run code inside each folder</p>
+<ol>
+  <li>Clone repository</li>
+  <li>Activate venv (optional)</li>
+  <li>Open examples and run code inside each folder</li>
+</ol>
 
 <h2>Content</h2>
 
