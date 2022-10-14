@@ -2,12 +2,12 @@ import socket
 import threading
 
 # server config
-IP = "0.0.0.0"
+host = "0.0.0.0"
 port = 12345
 
 def main():
   server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-  server.bind((IP, port))
+  server.bind((host,port))
   server.listen(5)
   print(f"[*] Server is listenning")
 

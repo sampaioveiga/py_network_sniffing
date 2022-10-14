@@ -21,6 +21,11 @@ This project takes baby steps into the creation of a network sniffer.
 <h3>Dir 03 - simple server with threading and client</h3>
 <p>client.py and server.py with threading and support for up to 20 clients</p>
 
+<h3>Dir - server and client communication with threadind </h3>
+<p>client.py and server.py communicationg with threading and support for up to 20 clients</p>
+
+
+
 <h3>Dir 4 - reverse tcp shell</h3>
 <p>server.py waits for clients and on connect runs remote commands on client</p>
 
